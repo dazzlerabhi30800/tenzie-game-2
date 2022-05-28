@@ -1,0 +1,84 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height : 500px;
+    width : 700px;
+    background : linear-gradient(180deg, rgb(173, 150, 241),rgb(245, 140, 227));
+    color : black;
+    border-radius: 10px;
+    text-align: center;
+    padding : 20px;
+    position: relative;
+    top : 3rem;
+}
+.heading {
+    color : white;
+    font-size : 2.4rem;
+    width: clamp(500px, 5vw, 500px);
+    align-self: center;
+}
+
+.description {
+    font-size: 1.2rem;
+    width : clamp(300px, 500px, 700px);
+    align-self: center;
+}
+
+.die--container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap : 15px;
+    padding : 1rem 1rem;
+    /* background : blue; */
+    place-items: center;
+}
+
+.die {
+    background : white;
+    width : 50px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius : 10px;
+    box-shadow: 1px 1px 3px 2px rgba(17, 16, 16, 0.226);
+    transition: all 300ms linear;
+}
+.die:hover {
+    background : rgb(248, 184, 250);
+}
+
+.number {
+    font-size : 1.5rem;
+    color : rgb(19, 18, 18);
+    font-weight: bold;
+}
+
+
+/* Button  */
+.dice--button {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.dice--button > button {
+    border: none;
+    outline: none;
+    padding : 10px 20px;
+    border-radius: 2px;
+    background : rgb(247, 81, 131);
+    color : rgb(17, 9, 5);
+    font-size: 1.2rem;
+    font-weight: medium;
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 300ms linear;
+}
+.dice--button > button:hover {
+    transform: scale(1.1);   
+}
